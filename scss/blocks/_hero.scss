@@ -1,0 +1,121 @@
+.margin {
+  height: 147px;
+}
+.hero-section {
+  background-color: $clr-white;
+}
+
+.hero {
+  //   padding: 180px 0 142px;
+  @include Display($space: space-between);
+  @media (max-width: 1082px) {
+    flex-direction: column;
+    gap: 65px;
+  }
+  &__content-wrapper {
+    max-width: 568px;
+    @media (max-width: 1082px) {
+      @include Display($space: start);
+      flex-direction: column;
+      align-items: center;
+    }
+    &__title {
+      @include TextStyle(
+        $fw: 700,
+        $fs: 40px,
+        $ln: 100%,
+        $ls: 0%,
+        $clr: $clr-black
+      );
+      span {
+        color: $clr-blue;
+      }
+
+      @media (max-width: 1082px) {
+        text-align: center;
+      }
+      @media (max-width: 658px) {
+        font-size: 28px;
+      }
+    }
+    &__coment {
+      @media (max-width: 1082px) {
+        text-align: center;
+      }
+      @include TextStyle(
+        $fw: 400,
+        $fs: 18px,
+        $ln: 100%,
+        $ls: 0%,
+        $clr: $clr-black
+      );
+      margin: 40px 0 50px;
+    }
+    &__btn-wrap {
+      @media (max-width: 1082px) {
+        text-align: center;
+      }
+      @include Display($space: start);
+      gap: 40px;
+      @media (max-width: 430px) {
+        flex-direction: column;
+      }
+      &__btn-1 {
+        @include Btn-Style(
+          $brd-clr: $clr-blue,
+          $bg-clr: $clr-blue,
+          $btn-fs: 32px,
+          $text-clr: $clr-white
+        );
+        &:hover {
+          @include Btn-Style(
+            $brd-clr: $clr-blue,
+            $bg-clr: $clr-white,
+            $btn-fs: 32px,
+            $text-clr: $clr-black
+          );
+        }
+        @media (max-width: 658px) {
+          font-size: 20px;
+        }
+      }
+      &__btn-2 {
+        @include Btn-Style(
+          $brd-clr: $clr-blue,
+          $bg-clr: $clr-white,
+          $btn-fs: 32px,
+          $text-clr: $clr-black
+        );
+        &:hover {
+          @include Btn-Style(
+            $brd-clr: $clr-blue,
+            $bg-clr: $clr-blue,
+            $btn-fs: 32px,
+            $text-clr: $clr-white
+          );
+        }
+        @media (max-width: 658px) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  &__img-1 {
+    display: none;
+    @media (max-width: 1082px) {
+      display: block;
+    }
+    @media (max-width: 658px) {
+      width: 100%;
+    }
+  }
+  &__img-2 {
+    max-width: 680px;
+    @media (max-width: 1126px) {
+      width: 540px;
+    }
+    @media (max-width: 1082px) {
+      display: none;
+    }
+  }
+}

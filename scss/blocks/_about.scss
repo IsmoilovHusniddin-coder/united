@@ -1,0 +1,92 @@
+.padding {
+  padding: 200px 40px;
+  background-color: $clr-white-yellow;
+  @media (max-width: 468px) {
+    padding: 200px 10px;
+  }
+}
+
+.about {
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    text-align: center;
+  }
+  max-width: 1164px;
+  @include Display($space: space-between);
+  &__build-img {
+    @media (max-width: 580px) {
+      width: 100%;
+    }
+  }
+  &__content-wrapper {
+    max-width: 584px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    @media (max-width: 468px) {
+      gap: 20px;
+    }
+    &__titlee {
+      @media (max-width: 1000px) {
+        display: block;
+      }
+
+      display: none;
+      @media (max-width: 468px) {
+        @include TextStyle(
+          $fw: 700,
+          $fs: 28px,
+          $ln: 100%,
+          $ls: 0%,
+          $clr: $clr-black
+        );
+      }
+      @include TextStyle(
+        $fw: 700,
+        $fs: 40px,
+        $ln: 100%,
+        $ls: 0%,
+        $clr: $clr-black
+      );
+    }
+    &__title {
+      @media (max-width: 1000px) {
+        display: none;
+      }
+      @media (max-width: 468px) {
+        @include TextStyle(
+          $fw: 700,
+          $fs: 28px,
+          $ln: 100%,
+          $ls: 0%,
+          $clr: $clr-black
+        );
+      }
+      @include TextStyle(
+        $fw: 700,
+        $fs: 40px,
+        $ln: 100%,
+        $ls: 0%,
+        $clr: $clr-black
+      );
+    }
+    &__coment {
+      @media (max-width: 468px) {
+        @include TextStyle(
+          $fw: 400,
+          $fs: 19px,
+          $ln: 100%,
+          $ls: 0%,
+          $clr: $clr-black
+        );
+      }
+      @include TextStyle(
+        $fw: 400,
+        $fs: 24px,
+        $ln: 100%,
+        $ls: 0%,
+        $clr: $clr-black
+      );
+    }
+  }
+}

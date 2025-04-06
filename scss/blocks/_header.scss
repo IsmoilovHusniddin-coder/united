@@ -1,0 +1,125 @@
+.site-header {
+  background-color: $clr-blue;
+  padding: 16px 0;
+  position: fixed;
+  width: 100%;
+  .menu {
+    @media (max-width: 620px) {
+      width: 60%;
+    }
+    @media (max-width: 470px) {
+      width: 70%;
+    }
+    @media (max-width: 360px) {
+      width: 100%;
+    }
+    width: 50%;
+    height: 100vh;
+    padding: 20px;
+    top: 0;
+    left: -100%;
+    position: fixed;
+    background-color: $clr-blue;
+    transition: all 0.3s;
+    &__top-wrapper {
+      margin-bottom: 43px;
+      @include Display($space: space-between);
+    }
+    &__btn {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    &__links-wrapper {
+      flex-direction: column;
+      a {
+        display: flex;
+        flex-direction: column;
+      }
+      a {
+        @include TextStyle(
+          $fw: 500,
+          $fs: 18px,
+          $ln: 100%,
+          $ls: 0%,
+          $clr: $clr-white
+        );
+      }
+    }
+  }
+  .show {
+    left: 0;
+  }
+}
+
+.header {
+  @include Display($space: space-between);
+  &__logo-img {
+    @media (max-width: 750px) {
+      width: 115px;
+      height: 87px;
+    }
+    @media (max-width: 630px) {
+      width: 80px;
+      height: 57px;
+    }
+  }
+  &__navbar {
+    @media (max-width: 1119px) {
+      display: none;
+    }
+    @include Display($space: start);
+    gap: 42px;
+    a {
+      @include TextStyle(
+        $fw: 500,
+        $fs: 24px,
+        $ln: 100%,
+        $ls: 0%,
+        $clr: $clr-white
+      );
+    }
+  }
+  &__btn-wrapper {
+    @include Display($space: start);
+    gap: 15px;
+    &__btn-1 {
+      @media (max-width: 630px) {
+        display: none;
+      }
+      @include Btn-Style(
+        $brd-clr: $clr-white,
+        $bg-clr: $clr-white,
+        $btn-fs: 24px,
+        $text-clr: $clr-black
+      );
+      &:hover {
+        @include Btn-Style(
+          $brd-clr: $clr-white,
+          $bg-clr: $clr-blue,
+          $btn-fs: 24px,
+          $text-clr: $clr-white
+        );
+      }
+    }
+    &__btn-2 {
+      @media (max-width: 630px) {
+        display: block;
+      }
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      display: none;
+    }
+    &__btn-3 {
+      @media (max-width: 1119px) {
+        display: block;
+      }
+
+      border: none;
+      cursor: pointer;
+      background-color: transparent;
+      display: none;
+    }
+  }
+}
