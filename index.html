@@ -6,10 +6,11 @@
     <title>United</title>
     <link rel="icon" href="./images/logo.svg" />
     <link rel="stylesheet" href="./css/main.css" />
+    <style type="text/tailwindcss"></style>
   </head>
   <body>
     <header class="site-header">
-      <div class="container header">
+      <div class="containers header">
         <a class="header__logo-link" href="/">
           <img
             class="header__logo-img"
@@ -76,7 +77,170 @@
     </header>
     <main class="site-main">
       <section class="margin"></section>
-      <section class="hero-section">
+      <section class="pt-[180px] pb-[142px] relative overflow-hidden">
+        <div class="containers">
+          <div class="max-w-[568px] flex flex-col gap-10">
+            <h2 class="font-bold text-[40px] leading-[100%] text-[#000]">
+              <span class="text-[#5855E7]">The Best Future Stars</span> - мы
+              заботимся о будущем вашего ребенка
+            </h2>
+            <p class="font-normal text-[18px] leading-[100%] text-[#000]">
+              Наши опытные преподователи сделают процесс обучения максимально
+              интересным и эффективным для вашего ребенка
+            </p>
+            <div class="flex items-center justify-between">
+              <a
+                class="!w-[47%] font-medium text-[36px] border-[3px] border-[#6347eb] leading-[100%] text-white py-[7px] bg-[#6347eb] rounded-[10px] py-[7px] text-center transition-[all 0.3s] hover:bg-white hover:text-black"
+                href=""
+                >Позвонить
+              </a>
+              <p
+                class="w-[47%] font-medium text-[36px] leading-[100%] border-[3px] border-[#6347eb] text-black py-[7px] text-center bg-transparent rounded-[10px] ease-linear cursor-pointer hover:bg-[#6347eb] hover:text-white"
+              >
+                Подробнее
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          class="absolute right-0 top-0"
+          src="./images/hero-pupil-2.png"
+          alt=""
+        />
+      </section>
+      <section class="py-[214px] bg-[#fafafa]">
+        <div class="containers">
+          <div class="flex justify-between items-center">
+            <h2 class="hidden font-bold text-[40px] leading-[100%] text-[#000]">
+              О нас
+            </h2>
+            <img
+              src="./images/abotu-build.png"
+              alt="about-building-images"
+              class="w-[534px] h-[492px]"
+            />
+            <div class="max-w-[584px] flex flex-col gap-12">
+              <h2 class="font-bold text-[40px] leading-[100%] text-[#000]">
+                О нас
+              </h2>
+              <p class="font-normal text-[24px] leading-[100%] text-black">
+                Для комфортного образования и времяпровождения, мы объединяем
+                детей небольшими комфортными группами, которые разделяются по
+                возрастным категориям, а также и по образовательным
+                направлениям. Индивидуальный подход к каждому ребёнку. В классе
+                не более 10 учеников. Углублённое изучение английского
+                языка.Кроме этого, мы отправляем наших детей на языковую
+                практику за рубеж. Обучение с 8.00 до 17.00; 3-х разовое
+                сбалансированное питание ( по желанию), выполнение домашних
+                заданий. Все условия и комфорт для ваших детей!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-[#5855E7] py-[73px]">
+        <div class="containers">
+          <h2
+            class="mb-[92px] text-center font-bold text-[40px] leading-[100%] text-[#fff]"
+          >
+            Наши преимущества
+          </h2>
+          <div class="flex flex-wrap justify-around gap-[70px]">
+            <div class="w-[261px] h-[382px]">
+              <img
+                src="./images/advanta-1.png"
+                alt="oval-pupil-img"
+                class="w-[225px] h-[225px] mx-auto"
+              />
+              <h3
+                class="py-[20px] text-center text-white font-bold text-[24px] leading-[100%]"
+              >
+                3-х разовое питание
+              </h3>
+              <p
+                class="font-normal text-[18px] leading-[100%] text-center text-white"
+              >
+                Для комфотрного времяпровождения в нашей школе, мы готовим
+                вкусную и полезную еду 3 раза в день
+              </p>
+            </div>
+            <div class="w-[375px] h-[382px]">
+              <img
+                src="./images/advanta-2.png"
+                alt="oval-pupil-img"
+                class="w-[225px] h-[225px] mx-auto"
+              />
+              <h3
+                class="py-[20px] text-center text-white font-bold text-[24px] leading-[100%]"
+              >
+                IT технологии
+              </h3>
+              <p
+                class="font-normal text-[18px] leading-[100%] text-center text-white"
+              >
+                21 век- это век информационных технологий. Ваш ребенок сможет
+                научиться азам програмированния, тенденциям в мире гаджетов и
+                профессиям будущего
+              </p>
+            </div>
+            <div class="w-[288px] h-[386px]">
+              <img
+                src="./images/advanta-3.png"
+                alt="oval-pupil-img"
+                class="w-[225px] h-[225px] mx-auto"
+              />
+              <h3
+                class="py-[20px] text-center text-white font-bold text-[24px] leading-[100%]"
+              >
+                Ментальная арифметика
+              </h3>
+              <p
+                class="font-normal text-[18px] leading-[100%] text-center text-white px-[33px]"
+              >
+                Мы обучим детей быстро вычислять в уме сложные математические
+                рассчёты
+              </p>
+            </div>
+            <div class="w-[354px] h-[384px]">
+              <img
+                src="./images/advanta-4.png"
+                alt="oval-pupil-img"
+                class="w-[225px] h-[225px] mx-auto"
+              />
+              <h3
+                class="py-[20px] text-center text-white font-bold text-[24px] leading-[100%]"
+              >
+                Общение на английском языке
+              </h3>
+              <p
+                class="font-normal text-[18px] leading-[100%] text-center text-white px-[40px]"
+              >
+                Для свободного общения на английском языке, у нас
+                предусматривается целый день Speaking
+              </p>
+            </div>
+            <div class="w-[302px] h-[384px]">
+              <img
+                src="./images/advanta-5.png"
+                alt="oval-pupil-img"
+                class="w-[225px] h-[225px] mx-auto"
+              />
+              <h3
+                class="py-[20px] text-center text-white font-bold text-[24px] leading-[100%]"
+              >
+                Иностранные языки
+              </h3>
+              <p
+                class="font-normal text-[18px] leading-[100%] text-center text-white"
+              >
+                Наши высококвалифицированные учителя обучат детей: Английскому,
+                русскому, арабскому и китайскому языку
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="hero-section">
         <div class="container hero">
           <img src="./images/hero-pupil.png" alt="pupil" class="hero__img-1" />
           <div class="hero__content-wrapper">
@@ -219,9 +383,21 @@
             </ul>
           </div>
         </div>
-      </seciton>
+      </seciton> -->
     </main>
 
     <script src="./js/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
   </body>
 </html>

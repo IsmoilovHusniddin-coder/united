@@ -31,7 +31,7 @@
   text-decoration: none;
 }
 
-.container {
+.containers {
   max-width: 1235px;
   margin: 0 auto;
   padding: 0 16px;
@@ -42,6 +42,7 @@
   padding: 16px 0;
   position: fixed;
   width: 100%;
+  z-index: 9999;
 }
 .site-header .menu {
   width: 50%;
@@ -199,7 +200,9 @@
 }
 
 .hero-section {
-  background-color: #fff;
+  background-image: url(../../images/body-bg-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero {
